@@ -1,0 +1,12 @@
+﻿@using Fiver.Security.Csrf.Models.Home
+@model Movie
+
+<h2>Create</h2>
+
+<form asp-action="Save" method="post">
+    <label asp-for="Title"></label>
+    <input asp-for="Title" /> <br />
+
+    <br />
+    <button type="submit">Save</button><br />
+</form>

@@ -1,0 +1,13 @@
+﻿@using Fiver.Security.Csrf.Models.Home
+@model List<Movie>
+
+<h2>Home</h2>
+
+<a asp-action="Create">Create</a>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Title</li>
+    }
+</ul>
